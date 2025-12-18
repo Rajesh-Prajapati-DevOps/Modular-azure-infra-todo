@@ -9,14 +9,14 @@ terraform {
 
 provider "azurerm" {
   features {}
-  #   subscription_id = "enter-your-subscription-id-here"
+subscription_id = "987e5914-628e-4e9a-8c8f-d7fa87735002"
 }
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "ritkargs"
-    storage_account_name = "ritkasas"
-    container_name       = "ritkascs"
-    key                  = "datablock.tfstate"
+    resource_group_name  = "kannu_rg"
+    storage_account_name = "kannukastorage"
+    container_name       = "backendstorage"
+    key                  = "todo.tfstate"
   }
 }
